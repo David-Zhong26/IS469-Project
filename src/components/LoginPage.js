@@ -7,7 +7,7 @@ const LoginPage = ({ onUserTypeSelect }) => {
       <div className="login-container">
         <div className="login-header">
           <div className="login-logo">
-            <div className="logo-large">💡</div>
+            <img src="/src/assets/spotly-logo.svg" alt="Spotly Logo" className="logo-large" />
             <h1>Spotly</h1>
           </div>
           <p className="login-subtitle">Choose your role to get started</p>
