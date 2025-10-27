@@ -22,6 +22,7 @@ function App() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-brand">
+            <div className="logo">💡</div>
             <h1>Spotly</h1>
           </div>
           <div className="nav-links">
