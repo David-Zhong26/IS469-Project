@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LoginPage from './components/LoginPage';
 import DiscoveryPage from './components/DiscoveryPage';
 import CompanyProfilePage from './components/CompanyProfilePage';
+import logo from './assets/logo.png';
 import './App.css';
 
 function App() {
@@ -85,7 +86,7 @@ function App() {
         <nav className="navbar">
           <div className="nav-container">
             <div className="nav-brand" onClick={handleLogoClick}>
-              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Spotly Logo" className="logo" />
+              <img src={logo} alt="Spotly Logo" className="logo" />
               <h1>Spotly</h1>
             </div>
             <div className="nav-links">
