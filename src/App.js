@@ -85,7 +85,7 @@ function App() {
         <nav className="navbar">
           <div className="nav-container">
             <div className="nav-brand" onClick={handleLogoClick}>
-              <img src="/logo.png" alt="Spotly Logo" className="logo" />
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Spotly Logo" className="logo" />
               <h1>Spotly</h1>
             </div>
             <div className="nav-links">

@@ -7,7 +7,7 @@ const LoginPage = ({ onUserTypeSelect }) => {
       <div className="login-container">
         <div className="login-header">
           <div className="login-logo">
-            <img src="/logo.png" alt="Spotly Logo" className="logo-large" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Spotly Logo" className="logo-large" />
             <h1>Spotly</h1>
           </div>
           <p className="login-subtitle">Choose your role to get started</p>
