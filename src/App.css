@@ -74,10 +74,43 @@
   background-color: #fffbeb;
 }
 
+.nav-link.red:hover {
+  color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.nav-link.red.active {
+  color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.nav-link.blue:hover {
+  color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.nav-link.blue.active {
+  color: #3b82f6;
+  background-color: #eff6ff;
+}
+
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.placeholder-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  font-size: 24px;
+  color: #6b7280;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {

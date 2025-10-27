@@ -1,0 +1,155 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9 0%, #f3f4f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-header {
+  margin-bottom: 48px;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.logo-large {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #D88F00 0%, #EFCA93 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 4px 16px rgba(216, 143, 0, 0.3);
+}
+
+.login-logo h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #374151;
+  margin: 0;
+}
+
+.login-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.user-type-selection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-type-card {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-type-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.user-type-card.influencer:hover {
+  border-color: #ef4444;
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.2);
+}
+
+.user-type-card.company:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+}
+
+.user-type-card.influencer {
+  border-left: 4px solid #ef4444;
+}
+
+.user-type-card.company {
+  border-left: 4px solid #3b82f6;
+}
+
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.user-type-card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+.user-type-card p {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+.card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.card-features span {
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: left;
+}
+
+.user-type-card.influencer .card-features span {
+  color: #ef4444;
+}
+
+.user-type-card.company .card-features span {
+  color: #3b82f6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-logo {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .login-logo h1 {
+    font-size: 36px;
+  }
+  
+  .user-type-selection {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .user-type-card {
+    padding: 24px 20px;
+  }
+}
