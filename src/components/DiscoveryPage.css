@@ -1,0 +1,239 @@
+.discovery-page {
+  max-width: 100%;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 32px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+}
+
+/* Companies Grid */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.company-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.company-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-right: 16px;
+}
+
+.company-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.company-industry {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.company-details {
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+
+.detail-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280;
+  min-width: 120px;
+  margin-right: 12px;
+  letter-spacing: 0.05em;
+}
+
+.detail-value {
+  font-size: 14px;
+  color: #374151;
+  flex: 1;
+}
+
+.company-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+/* Campaigns Grid */
+.campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.campaign-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.campaign-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-header {
+  margin-bottom: 20px;
+}
+
+.campaign-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.campaign-company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.campaign-company .company-logo {
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  margin-right: 0;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.campaign-details {
+  margin-bottom: 20px;
+}
+
+.campaign-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+/* Modal Styles */
+.modal-subtext {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .filter-group {
+    min-width: auto;
+  }
+  
+  .filter-actions {
+    justify-content: center;
+  }
+  
+  .companies-grid,
+  .campaigns-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .company-actions,
+  .campaign-actions {
+    flex-direction: column;
+  }
+  
+  .page-header h1 {
+    font-size: 24px;
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+  }
+}
