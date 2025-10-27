@@ -85,7 +85,7 @@ function App() {
         <nav className="navbar">
           <div className="nav-container">
             <div className="nav-brand" onClick={handleLogoClick}>
-              <img src="/src/assets/spotly-logo.svg" alt="Spotly Logo" className="logo" />
+              <img src="/logo.png" alt="Spotly Logo" className="logo" />
               <h1>Spotly</h1>
             </div>
             <div className="nav-links">
@@ -96,7 +96,6 @@ function App() {
                     onClick={() => page.hasDropdown ? handleDiscoveryClick() : setCurrentPage(page.id)}
                   >
                     {page.name}
-                    {page.hasDropdown && <span className="dropdown-arrow">▼</span>}
                   </button>
                   {page.hasDropdown && showDiscoveryDropdown && (
                     <div className="dropdown-menu">
